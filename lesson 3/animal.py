@@ -6,7 +6,7 @@ class Animal:
         self.type = type
         self.color =  color
     # Định nghĩa phương thức make_sound cho đối tượng
-    def make_sound(self):
+    def __make_sound(self):
         print("Animal make sound!!!")
 
 # Animal là một lớp
