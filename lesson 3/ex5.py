@@ -18,6 +18,12 @@ class Promo:
         self.price = price
     def discount(self, percent):
         return self.price * percent / 100
+    
+class BulkOrderPromo(Promo):
+    def discount(self, percent):
+        if len(order.item_list) > 5:
+            return super().discount(percent + 5)
+        return super().discount(percent)
 
 order = Order(123)
 item1 = Item(10, 500)
