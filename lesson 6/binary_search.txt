@@ -1,0 +1,49 @@
+Tìm số 8
+start = 0
+stop = 7
+
+1. Lần đầu tiên:
+start <= stop: True
+    mid = (0 + 7) // 2 = 3
+    arr[mid] = 9 > num (= 8)
+        -> stop = mid - 1 = 3 - 1 = 2
+
+2. Lần thứ 2
+start <= stop: True
+    mid = (0 + 2) // 2 = 1
+    arr[mid] = 5 < num (= 8)
+        -> start = mid + 1 = 1 + 1 = 2
+
+3. Lần thứ 3
+start <= stop: True
+    mid = (2 + 2) // 2 = 2
+    arr[mid] = 8 = num (= 8)
+        -> return mid (2)
+
+Tìm số 1:
+start = 0, stop = 7
+Lần 1.
+    mid = 3, stop = 2
+Lần 2. 
+    mid = 1, stop = 0
+Lần 3. 
+    mid = 0 -> return 0
+
+Thuật toán binary_search có độ phức tạp O(logn)
+tức là khoảng tìm kiếm giảm đi một nửa sau mỗi lần tìm
+
+Logarit được định nghĩa như sau:
+Logarit của một số x theo Cơ số b là số y sao cho:
+    b^y = x
+=>  logb(x) = y
+
+Ví dụ: 2^3 = 8
+=> log2(8) = 3
+
+Số lần tìm kiếm tối đa của mảng có len phần tử là:
+log2(len)
+
+Ví dụ mảng 10^9 phần tử thì cần tìm tối đa
+log2(10^9) = 30 lần
+
+hằng số euler: e ~ 2,718...: logarit tự nhiên
