@@ -1,3 +1,7 @@
+# Cách viết hàm: Xác định IPO
+# I - input: các tham số truyền vào hàm - ứng với phần khai báo hàm
+# O - output: kết quả muốn nhận sau khi hàm thực thi xong - ứng với return
+# P - process: cách xử lý để có được output mong muốn - ứng với phần thân hàm
 def linear_search(arr: list, num):
     for k in arr:
         if k == num:
@@ -6,6 +10,10 @@ def linear_search(arr: list, num):
 # return True / False bởi vì chỉ cần kiểm tra phần tử có thuộc
 # danh sách arr hay không, không cần lấy thông tin vị trí
 
+# IPO ?
+# I: arr1, arr2
+# P: quá trình làm
+# O: intersect(arr1, arr2)
 def arr_intersect(arr1: list, arr2: list):
     arr1_ready = set(arr1) # Loại bỏ các phần tử trùng nhau trong arr
     arr2_ready = set(arr2)
