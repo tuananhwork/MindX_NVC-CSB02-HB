@@ -28,6 +28,10 @@ def generate_binary_numbers(N):
         queue.append(current + "0")
         queue.append(current + "1")
 
+        print(f"current: {current}")
+        print(f"result: {result}")
+        print(f"queue: {queue}")
+
     return result
 
 # Test

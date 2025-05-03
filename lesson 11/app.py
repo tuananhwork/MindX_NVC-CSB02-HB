@@ -13,4 +13,3 @@ stack.append(4) # Stack = [1, 2, 3, 4]
 stack.pop() # Stack = [1, 2, 3]
 
 top = stack[-1] # Không làm thay đổi stack, Stack = [1, 2, 3, 4]
-
